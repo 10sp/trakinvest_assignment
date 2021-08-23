@@ -1,0 +1,131 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Trakinvest",
+		"_postman_id": "9dd37b74-c65b-a272-6b49-37f0b7574b9c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/employees",
+			"request": {
+				"url": "http://localhost:3000/employees",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"empname\":\"shankar\",\"age\":32,\"dept\":\"hr\"}"
+				},
+				"description": "to fetch employee details like employee name,age, details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/departments",
+			"request": {
+				"url": "http://localhost:3000/departments",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"empname\":\"shankar\",\"age\":32,\"dept\":\"hr\"}"
+				},
+				"description": "to fetch all departments"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/employees/5",
+			"request": {
+				"url": "http://localhost:3000/employees/5",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "deleting with id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/employees",
+			"request": {
+				"url": "http://localhost:3000/employees",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"empname\":\"shankar\",\"age\":32,\"depId\": \"3\"}"
+				},
+				"description": "adding employee with details like employeename,age,deparment"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/departments",
+			"request": {
+				"url": "http://localhost:3000/departments",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"empname\":\"shankar\",\"age\":32,\"dept\":\"hr\"}"
+				},
+				"description": "getting departments"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/employees/11",
+			"request": {
+				"url": "http://localhost:3000/employees/11",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"empname\": \"shanky\", \"age\": \"32\", \"id\": \"11\", \"depid\": 4}"
+				},
+				"description": "updating employee details"
+			},
+			"response": []
+		}
+	]
+}
